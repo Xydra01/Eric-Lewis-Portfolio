@@ -1,0 +1,145 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 1px solid red;
+}
+
+header {
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+  align-items: center;
+  position: absolute;
+  min-width: 100vw;
+  justify-content: space-between;
+  min-height: 93px;
+}
+
+a {
+  text-decoration: none;
+}
+
+nav {
+  display: flex;
+}
+
+header a {
+  padding: 13px;
+  margin-left: 5px;
+  margin-right: 0px;
+}
+
+body {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.headimage {
+  display: flex;
+  flex: 0 0 100%;
+  margin-top: 10%;
+  min-height: 200px;
+  max-height: 200px;
+}
+
+.headimage img {
+  background-size: cover;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.sidebar {
+  display: flex;
+  flex: 1 0 300px;
+  flex-direction: column;
+  margin-top: 50px;
+  max-width: 16%;
+  min-height: 100vh;
+  align-items: flex-end;
+  justify-content: space-around;
+}
+.aboutme {
+  display: flex;
+  margin-top: 60px;
+  flex-wrap: wrap;
+  flex: 0 0 83%;
+  max-height: 25vh;
+  align-items: center;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0px;
+  flex: 1 1 80%;
+  justify-content: center;
+}
+
+.card {
+  flex: 0 0 200px;
+  max-height: 20vh;
+  margin: 10px;
+  border: 1px solid #ccc;
+  box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.3);
+  flex-wrap: wrap;
+}
+
+.card img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+footer {
+  position: absolute;
+  bottom: -309px;
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex: 1 1 0;
+  min-width: 80vw;
+}
+
+footer a {
+  padding: 10px;
+}
+
+/* Mobile view settings */
+
+@media only screen and (max-width: 768px) {
+  .sidebar {
+    display: none;
+  }
+  header {
+    flex-direction: column;
+  }
+  nav a {
+    margin-left: 0%;
+  }
+  nav {
+    flex-direction: column;
+    min-width: 100vw;
+    justify-content: center;
+    align-items: center;
+  }
+  .aboutme {
+    margin-top: 240px;
+    flex: 0 0 100%;
+  }
+  .cards {
+    flex: 0 0 100%;
+  }
+  .headimage {
+    display: none;
+  }
+}
